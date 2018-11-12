@@ -7,7 +7,7 @@ execution:
 scenarios:
   post_with_json:
     requests:
-      - url:  
+      - url: /item-create/items 
         method: POST
         headers:
           Content-Type: 'application/json'

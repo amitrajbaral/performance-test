@@ -10,8 +10,8 @@ scenarios:
     data-sources:
     - access_token.csv 
     requests:
-    - url: https://amitrajbaral-api-jp.mini.dev5s.com/browse_item_history/history?_app_version=9999&_platform=ios&_access_token=${ACCESS_TOKEN}
-      label: browse_item_history
+    - url: /browse_history/history
+      label: browse_history
 reporting:
 - module: blazemeter      
       

@@ -1,9 +1,9 @@
 included-configs:
-- post.yml
+- postman.yml
 
 modules:
-  local:
-    sequential: true
+  newman:
+    tools-dir: my-dir
 
 reporting:
 - module: console
