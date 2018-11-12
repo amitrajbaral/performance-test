@@ -1,0 +1,15 @@
+---
+execution:
+- scenario : get
+  concurrency: 100
+  ramp-up: 5s
+  hold-for: 1m
+
+scenarios:
+  get:
+    requests:
+    - url: /browse_history/history
+      label: browse_history
+reporting:
+- module: blazemeter      
+      
