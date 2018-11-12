@@ -1,0 +1,10 @@
+included-configs:
+- post.yml
+
+modules:
+  local:
+    sequential: true
+
+reporting:
+- module: console
+  module: blazemeter

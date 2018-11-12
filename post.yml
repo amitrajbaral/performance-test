@@ -1,0 +1,15 @@
+execution:
+  - scenario: post_with_json
+    concurrency: 5
+    ramp-up: 10s
+    hold-for: 1m
+
+scenarios:
+  post_with_json:
+    requests:
+      - url:  
+        method: POST
+        headers:
+          Content-Type: 'application/json'
+          Accept: 'application/json'
+        body-file: request.json

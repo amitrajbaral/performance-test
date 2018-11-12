@@ -1,0 +1,12 @@
+execution:
+  - executor: newman
+    scenario: simple
+    ramp-up: 10s
+    hold-for: 1m  
+
+scenarios:
+  simple:
+    script: postman_collection.json
+    environment: environment/postman_environment.json
+    timeout: 1s
+    think-time: 0.5s
